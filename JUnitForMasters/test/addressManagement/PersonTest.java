@@ -1,6 +1,7 @@
 package addressManagement;
 
 import static org.junit.Assert.*;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -16,8 +17,8 @@ public class PersonTest {
 	 */
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		Address adress1 = new Address("MaiStreet", "128735", "NY");
-		Person person1 = new Person("benny", "long", adress1);
+		Address address1 = new Address("MaiStreet", "128735", "NY");
+		Person person1 = new Person("benny", "long", address1);
 		fail("Not yet implemented");
 	}
 
