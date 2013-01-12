@@ -1,15 +1,27 @@
 package firstTest_Test;
 
 import static org.junit.Assert.*;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import hudson.model.FreeStyleBuild;
+import hudson.model.FreeStyleProject;
+import hudson.tasks.Shell;
 
+import org.apache.commons.io.FileUtils;
+import org.junit.*;
+import org.jvnet.hudson.test.HudsonTestCase;
 import static firstTest.FirstJUnitTest.*;
 
-public class FirstJUnitTest {
+public class FirstJUnitTest extends HudsonTestCase{
+	
+	public void test1() throws Exception {
+        FreeStyleProject project = createFreeStyleProject();
+        project.getBuildersList().add(new Shell("echo hello"));
+
+        FreeStyleBuild build = project.scheduleBuild2(0).get();
+        System.out.println(build.getDisplayName()+" completed");
+
+        String s = FileUtils.readFileToString(build.getLogFile());
+        assertTrue(s.contains("+ echo hello"));
+    }
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
