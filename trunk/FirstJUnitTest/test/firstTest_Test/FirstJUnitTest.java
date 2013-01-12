@@ -32,11 +32,22 @@ public class FirstJUnitTest {
 	 * red
 	 */
 	public void return5Test_Fail() {
-		assertEquals(6, return5());
+		//assertEquals(6, return5());
 	}
 	
 	@Test
+	/**
+	 * red
+	 */
 	public void returnFertig_Fail(){
+		//assertEquals("Erster", returnFertig());
+	}
+	
+	@Test
+	/**
+	 * green
+	 */
+	public void returnFertig_Succ(){
 		assertEquals("Fertig", returnFertig());
 	}
 	
