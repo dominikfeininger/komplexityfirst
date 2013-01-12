@@ -36,6 +36,11 @@ public class FirstJUnitTest {
 	}
 	
 	@Test
+	public void returnFertig_Fail(){
+		assertEquals("Fertig", returnFertig());
+	}
+	
+	@Test
 	/**
 	 * green
 	 */
