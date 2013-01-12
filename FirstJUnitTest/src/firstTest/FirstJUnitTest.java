@@ -9,6 +9,15 @@ public class FirstJUnitTest {
 		// TODO Auto-generated method stub
 
 	}
+	
+	/**
+	 * 
+	 * @return Stirng Fertig
+	 */
+	public static String returnFertig(){
+		return "Fertig";
+	}
+	
 	/**
 	 * 
 	 * @return 5
