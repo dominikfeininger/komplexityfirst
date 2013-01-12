@@ -14,7 +14,7 @@ public class FirstJUnitTest {
 	 * 
 	 * @return Stirng Fertig
 	 */
-	public staasfaftic String returnFertig(){
+	public static String returnFertig(){
 		return "Fertig";
 	}
 	
