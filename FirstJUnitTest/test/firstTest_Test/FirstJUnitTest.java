@@ -1,8 +1,13 @@
 package firstTest_Test;
 
 import static org.junit.Assert.*;
+
+import java.io.IOException;
+
+import hudson.EnvVars;
 import hudson.model.FreeStyleBuild;
 import hudson.model.FreeStyleProject;
+import hudson.slaves.EnvironmentVariablesNodeProperty;
 import hudson.tasks.Shell;
 
 import org.apache.commons.io.FileUtils;
@@ -10,9 +15,19 @@ import org.junit.*;
 import org.jvnet.hudson.test.HudsonTestCase;
 import static firstTest.FirstJUnitTest.*;
 
-public class FirstJUnitTest extends HudsonTestCase{
+public class FirstJUnitTest{// extends HudsonTestCase{
 	
-	public void test1() throws Exception {
+	private static Object obj;
+	
+	/*
+	public void setEnvironmentVariables() throws IOException {
+	    EnvironmentVariablesNodeProperty prop = new EnvironmentVariablesNodeProperty();
+	    EnvVars envVars = prop.getEnvVars();
+	    envVars.put("sampleEnvVarKey", "sampleEnvVarValue");
+	    super.hudson.getGlobalNodeProperties().add(prop);
+	}
+	
+	public void setup() throws Exception {
         FreeStyleProject project = createFreeStyleProject();
         project.getBuildersList().add(new Shell("echo hello"));
 
@@ -22,9 +37,31 @@ public class FirstJUnitTest extends HudsonTestCase{
         String s = FileUtils.readFileToString(build.getLogFile());
         assertTrue(s.contains("+ echo hello"));
     }
-
+	*/
+	
+	/**
+	 * Asserts
+	 */
+	@SuppressWarnings("deprecation")
+	@Test
+	public void testAsserts() throws Exception{
+		//fail("Let the method fail");
+		assertTrue(true); //check for boolean
+		assertFalse(false); //check for boolean
+		assertTrue("message to identify", true); //check for boolean
+		//assertEquals("message to identify", return179(), 17.9);
+		assertEquals("messgae to identify", return179(), 17.8, 0.1);
+		assertNull(returnNull());
+		assertNull("message to identify", returnNull());
+		assertNotNull(returnNotNull());
+		assertSame(getObj(), obj);
+		assertNotSame(obj, returnNotNull());
+	}
+	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
+		Object obj = new Object();
+		setObj(obj);
 	}
 
 	@AfterClass
@@ -44,7 +81,7 @@ public class FirstJUnitTest extends HudsonTestCase{
 	 * red
 	 */
 	public void return5Test_Fail() {
-		//assertEquals(6, return5());
+		assertEquals(6, return5());
 	}
 	
 	@Test
@@ -52,7 +89,7 @@ public class FirstJUnitTest extends HudsonTestCase{
 	 * red
 	 */
 	public void returnFertig_Fail(){
-		//assertEquals("Erster", returnFertig());
+		assertEquals("Erster", returnFertig());
 	}
 	
 	@Test
@@ -69,6 +106,14 @@ public class FirstJUnitTest extends HudsonTestCase{
 	 */
 	public void return5Test_Succ() {
 		assertEquals(5, return5());
+	}
+
+	public static Object getObj() {
+		return obj;
+	}
+
+	public static void setObj(Object o) {
+		obj = o;
 	}
 
 }
