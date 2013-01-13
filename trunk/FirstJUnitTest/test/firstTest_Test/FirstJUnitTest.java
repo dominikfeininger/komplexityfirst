@@ -1,19 +1,7 @@
 package firstTest_Test;
 
 import static org.junit.Assert.*;
-
-
-import java.io.IOException;
-
-import hudson.EnvVars;
-import hudson.model.FreeStyleBuild;
-import hudson.model.FreeStyleProject;
-import hudson.slaves.EnvironmentVariablesNodeProperty;
-import hudson.tasks.Shell;
-
-import org.apache.commons.io.FileUtils;
 import org.junit.*;
-import org.jvnet.hudson.test.HudsonTestCase;
 import static firstTest.FirstJUnitTest.*;
 
 public class FirstJUnitTest{// extends HudsonTestCase{
