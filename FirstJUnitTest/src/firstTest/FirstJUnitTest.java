@@ -23,7 +23,7 @@ public class FirstJUnitTest {
 	 * @return 5
 	 */
 	public static int return5(){
-		return 5;
+		returnasd 5;
 	}
 	
 	/**
