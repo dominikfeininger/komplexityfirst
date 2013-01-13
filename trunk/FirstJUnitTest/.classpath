@@ -4,12 +4,12 @@
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="/Users/feininger/Documents/eclipseWorkspace/KomplexityFirst/commons-io-2.4-javadoc.jar"/>
-	<classpathentry kind="lib" path="/Users/feininger/Documents/eclipseWorkspace/KomplexityFirst/commons-io-2.4-sources.jar"/>
-	<classpathentry kind="lib" path="/Users/feininger/Documents/eclipseWorkspace/KomplexityFirst/commons-io-2.4-test-sources.jar"/>
-	<classpathentry kind="lib" path="/Users/feininger/Documents/eclipseWorkspace/KomplexityFirst/commons-io-2.4-tests.jar"/>
-	<classpathentry kind="lib" path="/Users/feininger/Documents/eclipseWorkspace/KomplexityFirst/commons-io-2.4.jar"/>
-	<classpathentry kind="lib" path="/Users/feininger/Documents/eclipseWorkspace/KomplexityFirst/hudson-core-1.368.jar"/>
-	<classpathentry kind="lib" path="/Users/feininger/Documents/eclipseWorkspace/KomplexityFirst/hudson-test-harness-1.283.jar"/>
+	<classpathentry kind="lib" path="F:/eclipseWorkspace/HudsonJunitIntegration/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="F:/eclipseWorkspace/HudsonJunitIntegration/commons-io-2.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="F:/eclipseWorkspace/HudsonJunitIntegration/commons-io-2.4-sources.jar"/>
+	<classpathentry kind="lib" path="F:/eclipseWorkspace/HudsonJunitIntegration/commons-io-2.4-tests.jar"/>
+	<classpathentry kind="lib" path="F:/eclipseWorkspace/HudsonJunitIntegration/commons-io-2.4-test-sources.jar"/>
+	<classpathentry kind="lib" path="F:/eclipseWorkspace/HudsonJunitIntegration/hudson-core-1.368.jar"/>
+	<classpathentry kind="lib" path="F:/eclipseWorkspace/HudsonJunitIntegration/hudson-test-harness-1.283.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
