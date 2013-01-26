@@ -9,6 +9,10 @@ public class FirstJUnitTest {
 		// TODO Auto-generated method stub
 
 	}
+   
+  public static void testOfGoogleCode(){
+    System.Out.Println("testOfGoogleCode");
+  }
 	
 	/**
 	 * 
