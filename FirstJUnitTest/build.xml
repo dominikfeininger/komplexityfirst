@@ -69,6 +69,7 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
+	<!--
     <target name="FirstJUnitTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
@@ -83,6 +84,21 @@
                 <include name="TEST-*.xml"/>
             </fileset>
             <report format="frames" todir="${junit.output.dir}"/>
-        </junitreport>
+        </junitreport>	
     </target>
+    -->
+	 <junit printsummary="on" haltonfailure="false" dir="${testdir}" fork="true">
+	            <classpath refid="firstTest_Test.FirstJUnitTest" />
+	            <!--<jvmarg value="-ea"/>-->
+	            <jvmarg value="-Dlog4j.configuration=file:log4j.xml"/>
+	            <test name="${testdir}.FirstJUnitTest" outfile="xml-dir"/>
+	            <formatter type="xml" />
+	        </junit>
+	        <junitreport todir="html-dir">
+	            <fileset dir="xml-dir">
+	                <include name="*.xml" />
+	            </fileset>
+	            <report format="frames" todir="html-dir" />
+	        </junitreport>
+
 </project>
