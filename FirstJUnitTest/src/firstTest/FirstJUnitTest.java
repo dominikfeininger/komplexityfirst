@@ -10,9 +10,9 @@ public class FirstJUnitTest {
 
 	}
    
-  public static void testOfGoogleCode(){
-    System.Out.Println("testOfGoogleCode");
-  }
+    public static void testOfGoogleCode(){
+      System.Out.Println("testOfGoogleCode");
+    }
 	
 	/**
 	 * 
