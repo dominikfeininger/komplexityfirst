@@ -1,4 +1,4 @@
-package addressManagement;
+package test.java.addressManagement;
 
 import static org.junit.Assert.*;
 import org.junit.After;

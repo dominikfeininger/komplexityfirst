@@ -1,4 +1,4 @@
-package addressManagement;
+package main.java.addressManagement;
 
 public class Person {
 	
