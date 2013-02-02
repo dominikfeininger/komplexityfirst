@@ -1,6 +1,9 @@
-package addressManagement;
+package test.java.addressManagement;
 
 import static org.junit.Assert.*;
+
+import main.java.addressManagement.Address;
+import main.java.addressManagement.Person;
 
 import org.junit.After;
 import org.junit.AfterClass;

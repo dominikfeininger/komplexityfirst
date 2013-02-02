@@ -1,4 +1,4 @@
-package addressManagement;
+package test.java.addressManagement;
 
 import junit.framework.TestCase;
 
