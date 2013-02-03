@@ -6,8 +6,15 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Datenbank aktuelleDatenbank = new Datenbank(10, 10);		
+		Verwaltung aktuelleVerwaltung = new Verwaltung(aktuelleDatenbank);
+		
+		Address dietersAddresse = new Address("Mannheim");
+		Person dieter = new Person("dieter");
+		dieter.setAdress(dietersAddresse);
+		
+		aktuelleVerwaltung.personAnlegen(dieter);
+		//aktuelleVerwaltung.personLoeschen(dieter);
 	}
-
 }

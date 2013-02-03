@@ -1,6 +1,7 @@
 package test.java.addressManagement;
 
 import static org.junit.Assert.*;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -27,7 +28,7 @@ public class MainTest {
 
 	@Test
 	public void test() {
-		//fail("Not yet implemented");
+		fail("Not yet implemented");
 	}
 
 }

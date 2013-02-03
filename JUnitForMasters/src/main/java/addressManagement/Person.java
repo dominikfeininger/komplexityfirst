@@ -5,6 +5,7 @@ public class Person {
 	private String lastname;
 	private String surname;
 	private Address address;
+	private int id;
 	
 	/**
 	 * constuctor
@@ -12,10 +13,11 @@ public class Person {
 	 * @param surname
 	 * @param address1
 	 */
-	public Person(String lastname, String surname, Address address1){
+	public Person(String lastname, String surname, Address address1, int id){
 		this.address = address1;
 		this.lastname = lastname;
 		this.surname = surname;
+		this.setId(id);
 	}
 	
 	/**
@@ -23,6 +25,14 @@ public class Person {
 	 */
 	public Person(){
 		
+	}
+	
+	/**
+	 * 
+	 * @param lastname
+	 */
+	public Person(String lastname){
+		this.lastname = lastname;
 	}
 	
 	public String getLastname() {
@@ -47,6 +57,14 @@ public class Person {
 
 	public void setAdress(Address address) {
 		this.address = address;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 }
